@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simple Calculator</title>
+  </head>
+  <body class="montserrat">
+    <h1>Simple Calculator</h1>
+    <div id="Box-Input">
+      <div class="Box A">
+        <label for="input1">A</label> <br />
+        <input
+          type="number"
+          step="0.001"
+          id="input1"
+          placeholder="Enter number"
+        />
+      </div>
+      <div class="Box B">
+        <label for="input2">B</label> <br />
+        <input
+          type="number"
+          step="0.001"
+          id="input2"
+          placeholder="Enter number"
+        />
+      </div>
+      <div class="Box-Btn">
+        <button id="Sum">Addtion</button>
+      </div>
+      <div class="Box-Btn">
+        <button id="Sub">Subtraction</button>
+      </div>
+      <div class="Box-Btn">
+        <button id="Mul">Multiplication</button>
+      </div>
+      <div class="Box-Btn">
+        <button id="Div">Division</button>
+      </div>
+    </div>
+    <h2 id="Result"></h2>
+    <script src="script.js"></script>
+  </body>
+</html>

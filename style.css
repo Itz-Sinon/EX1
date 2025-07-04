@@ -1,6 +1,8 @@
 :root {
-  --base-backgroundcolor: white;
-  --base-textcolor: black;
+  --base-backgroundcolor: #06080f;
+  --base-textcolor: #c8c5c6;
+  --base-input-backgroundcolor: #0e1729;
+  --base-btn-backgroundcolor:#38bdf8;
   --base-textfont: 20px;
 }
 .montserrat {
@@ -31,16 +33,34 @@ h1 {
 }
 #Box-Input {
   display: grid;
-  max-width: 500px;
+  max-width: 700px;
   grid-template: 1fr 40% 40% / 50% 50%;
   margin: 20px 0;
+  padding: 0;
+}
+#Box-Input input {
+  outline: none;
+  height: 3em;
+  width: 15em;
+  border: solid 1px transparent;
+  border-radius: 12px;
+  color: var(--base-textcolor);
+  background-color: #0e1729;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #Box-Input button {
-  width: 100px;
-  height: 50px;
+  height: 5em;
+  width: 10em;
   margin: 10px;
-}
-#Box-Input button:hover {
+  border: none;
+  border-radius: 12px;
+  color: var(--base-backgroundcolor);
+  background-color: var(--base-btn-backgroundcolor);
   cursor: pointer;
 }
 .Box-Btn {

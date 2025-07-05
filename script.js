@@ -15,7 +15,7 @@ sum.addEventListener("click", () => {
     document.getElementById("Result").innerHTML = "Please enter valid number";
   } else {
     document.getElementById("Result").innerHTML =
-      "The result of the calculation A+B is: " + (a + b).toFixed(5);
+      "The result of the calculation A+B is: " + (a + b);
   }
 });
 
@@ -27,7 +27,7 @@ sub.addEventListener("click", () => {
     document.getElementById("Result").innerHTML = "Please enter valid number";
   } else {
     document.getElementById("Result").innerHTML =
-      "The result of the calculation A-B is: " + (a - b).toFixed(5);
+      "The result of the calculation A-B is: " + (a - b);
   }
 });
 
@@ -39,7 +39,7 @@ mul.addEventListener("click", () => {
     document.getElementById("Result").innerHTML = "Please enter valid number";
   } else {
     document.getElementById("Result").innerHTML =
-      "The result of the calculation A*B is: " + (a * b).toFixed(5);
+      "The result of the calculation A*B is: " + (a * b);
   }
 });
 
@@ -56,6 +56,6 @@ div.addEventListener("click", () => {
       return;
     }
     document.getElementById("Result").innerHTML =
-      "The result of the calculation A/B is: " + (a / b).toFixed(5);
+      "The result of the calculation A/B is: " + (a / b);
   }
 });

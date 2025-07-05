@@ -1,7 +1,7 @@
 :root {
-  --base-backgroundcolor: #06080fdd;
-  --base-textcolor: #c8c5c6;
-  --base-input-backgroundcolor: #0e1729;
+  --base-backgroundcolor: #ffffff;
+  --base-textcolor: #222731;
+  --base-input-backgroundcolor: #eeeeee;
   --base-btn-backgroundcolor:#38bdf8;
   --base-textfont: 20px;
 }
@@ -45,7 +45,7 @@ h1 {
   border: solid 1px transparent;
   border-radius: 12px;
   color: var(--base-textcolor);
-  background-color: #0e1729;
+  background-color:var(--base-input-backgroundcolor);
   text-align: center;
 }
 input::-webkit-outer-spin-button,
@@ -59,7 +59,7 @@ input::-webkit-inner-spin-button {
   margin: 10px;
   border: none;
   border-radius: 12px;
-  color: var(--base-backgroundcolor);
+  color: var(--base-textcolor);
   background-color: var(--base-btn-backgroundcolor);
   cursor: pointer;
 }

@@ -1,61 +1,23 @@
-function getA() {
-  let a = parseFloat(document.getElementById("input1").value);
-  return a;
-}
-function getB() {
-  let b = parseFloat(document.getElementById("input2").value);
-  return b;
+const result = document.getElementById("Result");
+
+function addToInput(input) {
+  result.value += input;
 }
 
-let sum = document.getElementById("Sum");
-sum.addEventListener("click", () => {
-  let a = getA();
-  let b = getB();
-  if (isNaN(a) || isNaN(b)) {
-    document.getElementById("Result").innerHTML = "Please enter valid number";
-  } else {
-    document.getElementById("Result").innerHTML =
-      "The result of the calculation A+B is: " + (a + b);
-  }
-});
+function deleteAll() {
+  result.value = "";
+}
 
-let sub = document.getElementById("Sub");
-sub.addEventListener("click", () => {
-  let a = getA();
-  let b = getB();
-  if (isNaN(a) || isNaN(b)) {
-    document.getElementById("Result").innerHTML = "Please enter valid number";
-  } else {
-    document.getElementById("Result").innerHTML =
-      "The result of the calculation A-B is: " + (a - b);
-  }
-});
+function deleteLetter() {
+  result.value = result.value.slice(0, -1);
+}
 
-let mul = document.getElementById("Mul");
-mul.addEventListener("click", () => {
-  let a = getA();
-  let b = getB();
-  if (isNaN(a) || isNaN(b)) {
-    document.getElementById("Result").innerHTML = "Please enter valid number";
+function calculate() {
+  const value = eval(result.value);
+  if (!isFinite(value)) {
+    result.value = "Error";
   } else {
-    document.getElementById("Result").innerHTML =
-      "The result of the calculation A*B is: " + (a * b);
+    result.value = value;
   }
-});
+}
 
-let div = document.getElementById("Div");
-div.addEventListener("click", () => {
-  let a = getA();
-  let b = getB();
-  if (isNaN(a) || isNaN(b)) {
-    document.getElementById("Result").innerHTML = "Please enter valid number";
-  } else {
-    if (b === 0) {
-      document.getElementById("Result").innerHTML =
-        "b must be different from 0";
-      return;
-    }
-    document.getElementById("Result").innerHTML =
-      "The result of the calculation A/B is: " + (a / b);
-  }
-});

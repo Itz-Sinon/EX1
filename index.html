@@ -13,40 +13,31 @@
     <title>Simple Calculator</title>
   </head>
   <body class="montserrat">
-    <h1>Simple Calculator</h1>
-    <div id="Box-Input">
-      <div class="Box A">
-        <label for="input1">A</label> <br />
-        <input
-          type="number"
-          id="input1"
-          class="montserrat"
-          placeholder="Enter number"
-        />
-      </div>
-      <div class="Box B">
-        <label for="input2">B</label> <br />
-        <input
-          type="number"
-          id="input2"
-          class="montserrat"
-          placeholder="Enter number"
-        />
-      </div>
-      <div class="Box-Btn">
-        <button id="Sum" class="montserrat">Addtion</button>
-      </div>
-      <div class="Box-Btn">
-        <button id="Sub" class="montserrat">Subtraction</button>
-      </div>
-      <div class="Box-Btn">
-        <button id="Mul" class="montserrat">Multiplication</button>
-      </div>
-      <div class="Box-Btn">
-        <button id="Div" class="montserrat">Division</button>
+    <div id="Container">
+      <input id="Result" class="montserrat" readonly />
+      <div id="Box-btn">
+        <button class="montserrat" onclick="deleteAll()">AC</button>
+        <button class="montserrat" onclick="deleteLetter()">DE</button>
+        <button class="montserrat" onclick="addToInput('(')">(</button>
+        <button class="montserrat" onclick="addToInput(')')">)</button>
+        <button class="montserrat" onclick="addToInput('/')">/</button>
+        <button class="montserrat" onclick="addToInput('7')">7</button>
+        <button class="montserrat" onclick="addToInput('8')">8</button>
+        <button class="montserrat" onclick="addToInput('9')">9</button>
+        <button class="montserrat" onclick="addToInput('*')">x</button>
+        <button class="montserrat" onclick="addToInput('4')">4</button>
+        <button class="montserrat" onclick="addToInput('5')">5</button>
+        <button class="montserrat" onclick="addToInput('6')">6</button>
+        <button class="montserrat" onclick="addToInput('-')">-</button>
+        <button class="montserrat" onclick="addToInput('1')">1</button>
+        <button class="montserrat" onclick="addToInput('2')">2</button>
+        <button class="montserrat" onclick="addToInput('3')">3</button>
+        <button class="montserrat" onclick="addToInput('+')">+</button>
+        <button class="montserrat" onclick="addToInput('0')">0</button>
+        <button class="montserrat" onclick="addToInput('.')">.</button>
+        <button class="montserrat" onclick="calculate()" id="equal">=</button>
       </div>
     </div>
-    <h2 id="Result"></h2>
     <script src="script.js"></script>
   </body>
 </html>
